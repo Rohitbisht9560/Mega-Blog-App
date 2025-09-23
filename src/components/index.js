@@ -5,4 +5,5 @@ import LogoutBtn from "./Header/LogoutBtn";
 import Logo from "./Logo";
 import Button from "./Button";
 import Input from "./Input";
-export {Header, Input, Footer,Container, LogoutBtn, Logo, Button,};
+import RTE from "./RTE";
+export {Header, Input, Footer,Container, LogoutBtn, Logo, Button,RTE};
