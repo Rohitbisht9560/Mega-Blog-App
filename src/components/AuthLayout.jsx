@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import {useNavigate} from 'react-router-dom'
-import {useSelector} from 'react-router-dom'
+import {useSelector} from 'react-redux'
 function Protected({children, authentication=true
 }){
   const navigate=useNavigate()

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useCallback } from "react";
 import { useForm } from "react-hook-form";
 import { Button, Input, Select, RTE } from "../index";
-import service from "../../appwrite/conf";
+import service from "../../appwrite/config";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -11,7 +11,7 @@ function PostForm({ post }) {
     useForm({
       defaultValues: {
         title: post?.title || "",
-        slug: post?.slug || "",
+        slug: post?.$id || "",
         content: post?.content || "",
         status: post?.status || "active",
       },

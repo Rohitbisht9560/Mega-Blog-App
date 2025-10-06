@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import service from "../appwrite/conf";
-
+import service from "../appwrite/config";
+import { Container } from "../components";
 function Home() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    service.getPosts([]).then((posts) => {
+    service.getPosts().then((posts) => {
       if (posts) {
-        setPosts(posts.document);
+        setPosts(posts.documents);
       }
     });
   }, []);
