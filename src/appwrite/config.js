@@ -30,7 +30,7 @@ export class Service{
                 }
             )
         } catch (error) {
-            console.error("Appwrite serive :: createPost", error);
+            console.log("Appwrite serive :: createPost", error);
         }
     }
 
