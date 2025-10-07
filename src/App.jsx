@@ -23,17 +23,16 @@ function App() {
   }, []);
 
   return !loading ? (
-    <div className="min-h-screen flex flex-wrap content-between bg-gray-400">
-      <div className="w-full block">
-        <Header />
-        <main>
-          TODO:
+    <div className="min-h-screen min-w-screen flex flex-wrap bg-gray-400">
+      <div className="flex flex-col min-h-screen min-w-screen bg-gray-400">
+        <Header />{" "}
+        <main className="flex-grow">
           <Outlet />
         </main>
         <Footer />
       </div>
     </div>
-  ) : null
+  ) : null;
 }
 
 export default App;
